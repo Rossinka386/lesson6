@@ -1,0 +1,429 @@
+/*todo *********Обнуление***************************/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 24px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*todo *********Обнуление***************************/
+/*  font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap');
+
+@font-face {
+	font-family: 'NotoSans';
+	src: url('../fonts/NotoSans.woff2') format('woff2'),
+		url('../fonts/NotoSans.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	src: url('../fonts/NotoSans-Bold.woff2') format('woff2'),
+		url('../fonts/NotoSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+		url('../fonts/Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+.header {
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Comfortaa', cursive;
+	background-color: #009B00;
+}
+
+.header a {
+	color: #FFFFFF;
+}
+
+.header__menu-row {
+	background: #008900;
+	padding: 17px 30px;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.header__menu-item {
+	padding: 0 25px 0 0;
+	margin-right: 30px;
+	text-transform: uppercase;
+	display: inline-block;
+	position: relative;
+}
+
+.header__menu-item:last-child {
+	margin-right: 0;
+}
+
+.header__menu-item::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: -5px;
+	width: 16px;
+	height: 16px;
+}
+
+.header__menu-item:hover {
+	color: #FFCC00;
+	text-shadow: 0 0 5px #FFCC00;
+}
+
+.header__menu-item:active {
+	text-shadow: 0 0 15px #FFCC00, 0 0 7px black;
+}
+
+.header__menu-item_search::after {
+	background: url('/img/icon/search.png') no-repeat;
+}
+
+.header__menu-item_shop::after {
+	background: url('/img/icon/shop.png') no-repeat;
+}
+
+.header__menu-item_profile::after {
+	background: url('/img/icon/profile.png') no-repeat;
+}
+
+.header__info {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.header__logo {
+	display: inline-block;
+	width: 177px;
+	height: 75px;
+	background: url('/img/logo.webp');
+	margin-right: 60px;
+}
+
+.header__nav-row {
+	display: inline-block;
+	min-width: 620px;
+
+}
+
+.header__nav-item {
+	padding-top: 50px;
+	display: inline-block;
+	margin-right: 30px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.header__nav-item::after {
+	content: '';
+	width: 32px;
+	height: 32px;
+	background: url('/img/icon/common_menu_icon.png') no-repeat;
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.header__nav-item:last-child {
+	margin-right: 0;
+}
+
+.header__nav-item:hover {
+	color: #FFCC00;
+	text-shadow: 0 0 5px #FFCC00;
+}
+
+.header__nav-item_games::after {
+	background: url('/img/icon/games.png') no-repeat;
+}
+
+.header__nav-item_videos::after {
+	background: url('/img/icon/videos.png') no-repeat;
+}
+
+.header__nav-item_animals::after {
+	background: url('/img/icon/animals.png') no-repeat;
+}
+
+.header__nav-item_more::after {
+	background: url('/img/icon/more.png') no-repeat;
+}
+
+.header__nav-item_subscribe::after {
+	background: url('/img/icon/subscribe.png') no-repeat;
+}
+
+/*todo ТЕЛО НАШЕЙ HTML СТРАНИЦЫ ************************************/
+body {
+	background: url('/img/bg-body2.jpg');
+	color: #FFCC00;
+}
+
+
+
+.container {
+	font-family: 'NotoSans';
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: rgba(0, 0, 0, 0.322);
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.281);
+}
+
+
+
+.head {
+	font-size: 0;
+}
+
+.head a {
+	color: #FFCC00;
+	font-family: 'Comfortaa',
+		cursive;
+}
+
+.head a:hover {
+	text-shadow: 0 0 5px #FFCC00;
+}
+
+.head__img {
+	display: inline-block;
+	width: 50%;
+	overflow: hidden;
+}
+
+.head__img img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.head__block {
+	display: inline-block;
+	width: 50%;
+	font-size: 30px;
+	vertical-align: top;
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.head__title {
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin-bottom: 40px;
+}
+
+.head__subtitle {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.head__classification {}
+
+.head__classification a {
+	display: inline-block;
+	padding-right: 40px;
+	position: relative;
+}
+
+.head__classification a::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: 0;
+	background: url('/img/icon/arrow.png');
+	width: 32px;
+	height: 32px;
+}
+
+.head__classification a:last-child:after {
+	display: none;
+}
+
+.card {
+	display: block;
+	width: 75%;
+	min-height: 200px;
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 200px 20px 20px;
+	background-color: #008900;
+	border: 8px solid #FFCC00;
+}
+
+.card::after {
+	content: '';
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 135px;
+	height: 135px;
+	background: url('/img/frog-blue.webp') no-repeat;
+	border-radius: 50%;
+}
+
+.card__info {
+	color: white;
+	font-size: 18px;
+	max-width: 400px;
+
+}
+
+.card__info p {
+	margin-bottom: 10px;
+}
+
+.card__info span {
+	text-transform: uppercase;
+	color: #ffcc00;
+}
+
+._margin {
+	margin-bottom: 20px;
+}
+
+.content {
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.content p {
+	margin-bottom: 10px;
+}
+
+.content img {
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.content *:last-child {
+	margin-bottom: 0;
+}
+
+.footer {
+	color: black;
+	display: block;
+	background-color: #008900;
+	padding: 20px 20px;
+}
+
+.footer a {
+	color: white;
+}
+
+.footer a:hover {
+	color: wheat;
+	text-shadow: 0 0 15px black;
+}
+
+.footer a:active {
+	color: black;
+	text-shadow: 0 0 15px yellow;
+}
+
+
+.copyrights li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.copyrights li:last-child {
+	margin-right: 0;
+}
