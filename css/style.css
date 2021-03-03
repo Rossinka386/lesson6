@@ -168,15 +168,15 @@ h6 {
 }
 
 .header__menu-item_search::after {
-	background: url('/img/icon/search.png') no-repeat;
+	background: url('../img/icon/search.png') no-repeat;
 }
 
 .header__menu-item_shop::after {
-	background: url('/img/icon/shop.png') no-repeat;
+	background: url('../img/icon/shop.png') no-repeat;
 }
 
 .header__menu-item_profile::after {
-	background: url('/img/icon/profile.png') no-repeat;
+	background: url('../img/icon/profile.png') no-repeat;
 }
 
 .header__info {
@@ -188,7 +188,7 @@ h6 {
 	display: inline-block;
 	width: 177px;
 	height: 75px;
-	background: url('/img/logo.webp');
+	background: url('../img/logo.webp');
 	margin-right: 60px;
 }
 
@@ -210,7 +210,7 @@ h6 {
 	content: '';
 	width: 32px;
 	height: 32px;
-	background: url('/img/icon/common_menu_icon.png') no-repeat;
+	background: url('../img/icon/common_menu_icon.png') no-repeat;
 	position: absolute;
 	bottom: 35px;
 	left: 50%;
@@ -227,28 +227,28 @@ h6 {
 }
 
 .header__nav-item_games::after {
-	background: url('/img/icon/games.png') no-repeat;
+	background: url('../img/icon/games.png') no-repeat;
 }
 
 .header__nav-item_videos::after {
-	background: url('/img/icon/videos.png') no-repeat;
+	background: url('../img/icon/videos.png') no-repeat;
 }
 
 .header__nav-item_animals::after {
-	background: url('/img/icon/animals.png') no-repeat;
+	background: url('../img/icon/animals.png') no-repeat;
 }
 
 .header__nav-item_more::after {
-	background: url('/img/icon/more.png') no-repeat;
+	background: url('../img/icon/more.png') no-repeat;
 }
 
 .header__nav-item_subscribe::after {
-	background: url('/img/icon/subscribe.png') no-repeat;
+	background: url('../img/icon/subscribe.png') no-repeat;
 }
 
 /*todo ТЕЛО НАШЕЙ HTML СТРАНИЦЫ ************************************/
 body {
-	background: url('/img/bg-body2.jpg');
+	background: url('../img/bg-body2.jpg');
 	color: #FFCC00;
 }
 
@@ -328,7 +328,7 @@ body {
 	position: absolute;
 	top: 2px;
 	right: 0;
-	background: url('/img/icon/arrow.png');
+	background: url('../img/icon/arrow.png');
 	width: 32px;
 	height: 32px;
 }
@@ -355,7 +355,7 @@ body {
 	right: 30px;
 	width: 135px;
 	height: 135px;
-	background: url('/img/frog-blue.webp') no-repeat;
+	background: url('../img/frog-blue.webp') no-repeat;
 	border-radius: 50%;
 }
 
